@@ -166,8 +166,7 @@ header button:hover {
   display: none;
   cursor: pointer;
 }
-.sticky-note
-.show-delete
+.sticky-note.show-delete
 .delete-btn {
   display: block;
 }
@@ -214,3 +213,38 @@ header button:hover {
 .color-purple { background-color: #d0bfff; }
 .color-pink { background-color: #fcc2d7; }
 .color-teal { background-color: #96f2d7; }
+
+/* CSS 추가 ( 프로필 드롭다운 ) */
+.user-area {
+  position: relative;
+}
+.user-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  z-index: 100;
+}
+.user-menu.hidden {
+  display: none;
+}
+.user-menu .menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.user-menu .menu-item:hover {
+  background: #f1f3f5;
+}
+.user-menu hr {
+  border: none;
+  border-top: 1px solid #e9ecef;
+  margin: 5px 0;
+}
